@@ -1,43 +1,91 @@
-# Astro Starter Kit: Minimal
+# Hamburguesas Castillo - Sitio Web
 
-```sh
-npm create astro@latest -- --template minimal
+Sitio web para el negocio de hamburguesas y postres "Castillo", desarrollado con Astro y Tailwind CSS.
+
+## 🚀 Características
+
+- ⚡️ Astro 5 - Framework ultrarrápido
+- 🎨 Tailwind CSS v4 - Estilos modernos y responsivos
+- 📱 Diseño mobile-first
+- 🛒 Carrito de compra
+- 💬 Integración con WhatsApp
+
+## 📁 Estructura del Proyecto
+
 ```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
 ├── public/
+│   ├── menu-screenshot.png
+│   └── carrito-screenshot.png
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── components/
+│   │   ├── Header.astro
+│   │   └── BottomNav.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   ├── pages/
+│   │   ├── index.astro      # Página del menú
+│   │   └── carrito.astro    # Página del carrito
+│   └── styles/
+│       └── global.css
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🛠️ Comandos
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+| Comando           | Acción                                               |
+| :---------------- | :--------------------------------------------------- |
+| `npm install`     | Instala las dependencias                             |
+| `npm run dev`     | Inicia el servidor de desarrollo en `localhost:4321` |
+| `npm run build`   | Construye el sitio para producción en `./dist/`      |
+| `npm run preview` | Vista previa de la construcción local                |
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 🎨 Paleta de Colores
 
-## 🧞 Commands
+- **Primary**: `#F25C24` (Naranja)
+- **Primary Dark**: `#D94A15`
+- **Secondary Aqua**: `#4FD1C5` (Aqua/Verde para postres)
+- **Background Light**: `#FDFBF7`
+- **Background Dark**: `#1A1A1A`
 
-All commands are run from the root of the project, from a terminal:
+## 📱 Páginas
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+### Menú Principal (`/`)
 
-## 👀 Want to learn more?
+- Hero con imagen destacada
+- Tarjetas de información (horarios, envío, pagos)
+- Categorías de productos
+- Hamburguesas con imágenes
+- Postres y bebidas
+- Footer con información de contacto
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### Carrito (`/carrito`)
+
+- Lista de productos seleccionados
+- Contador de cantidades
+- Campo de notas adicionales
+- Resumen de precios
+- Botón para ordenar por WhatsApp
+
+## 📞 Contacto
+
+- **WhatsApp**: 55 1174 0626 / 55 3972 7686
+- **Horario**: Jueves a Domingo, 6:00 PM - 11:00 PM
+- **Envío**: ¡Gratis!
+
+## 🔧 Tecnologías Utilizadas
+
+- [Astro](https://astro.build)
+- [Tailwind CSS](https://tailwindcss.com)
+- [Google Fonts - Poppins](https://fonts.google.com/specimen/Poppins)
+- [Material Icons](https://fonts.google.com/icons)
+
+## 📝 Notas de Desarrollo
+
+El proyecto fue convertido desde HTML estático a Astro con las siguientes mejoras:
+
+- Componentes reutilizables (Header, BottomNav)
+- Variables CSS personalizadas
+- TypeScript para type-safety
+- Estructura modular y mantenible
+- Optimización de imágenes automática por Astro
+# Hamburgesa-y-postres-castillo
