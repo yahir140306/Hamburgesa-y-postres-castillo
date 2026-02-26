@@ -1,17 +1,394 @@
 ---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import BottomNav from "../components/BottomNav.astro";
 
+const hamburguesas = [
+  {
+    nombre: "Sencilla",
+    precio: 55,
+    descripcion: "Carne 100% res, queso americano, vegetales frescos.",
+    imagen:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuA_wdyYusz-nrMt1tAxD7IPsDWLyy84w6eMi2ZtzLKIbe9VeiqvGbr9BINQu60r4JsRxYrSK5zw1LUCXAItKRyCcicHgLo1uUyyFww1uOcIupUHg_49KeMMtJGSYEeCgJ0WF68JcwC00W2-ZDhXPAYI0MQYkY_ctCCAkedwImHDf9k90zHJDQK5lC7EjZxQN3jehdQ7kVOVHieAd17Z_ZrAPPx3Gu4b0qdwFbxRXMm9CKwx5AuJDgNzCAPbi_gyqID1O86jSLMZHw",
+  },
+  {
+    nombre: "Hawaiana",
+    precio: 65,
+    descripcion: "Piña asada a la parrilla y jamón extra de pavo.",
+    imagen:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAeNS3BnbDZ9e3oO8yB1o5sZB86_1GN5SxtoJGlqPlMINSbiqHbt-EO0piQm4WTgASxqqzXxN_RZDGbImlkKoohV4SxakoZNyCaKxeCSxrZWJdakBcJfCEONBUPDO8NAjZ5LBlG1-vS_28KHTOqkVDDPuqVAe1LOQpdiL9xvmE5uZgZuMrNCFbGHQkFkiw_6Wpos1j5lW-saFPUYP9XZSipFR-lzUpRqQB-7qn2RDsFZqHJcjo3jiWiZWxVKsy7fXMneBsioz_Xag",
+  },
+  {
+    nombre: "3 Quesos",
+    precio: 65,
+    descripcion:
+      "Mezcla premium de quesos fundidos (Gouda, Manchego, Cheddar).",
+    imagen: null,
+  },
+  {
+    nombre: "Doble",
+    precio: 110,
+    descripcion: "Doble carne, doble sabor. Para los más hambrientos.",
+    imagen:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuDAJvwVsRwpTtDQViIJY5d28f5X9jjAM3ik5PpeQ3qn9vQK6tncW8kYIs3pD1kpOh2gGPS2ip6I-W6xxUdygXurKQIq0951rh4Kw5pYQVNg_ZaMJ9baT4XkuplJFxtHEBWqJ-GWJvzJwlk7fyiRnsJlsfxUUZzLXDhUTiBkfffYr5n-zPpMhGN4SOYbzEfnZfEsukQTQV1vID5mxQLmCQ6rf150pnWmh4Xia9zPSgddMBClrwO8c_iITIOx-13aTWcyLaRTbSNgxw",
+  },
+];
+
+const postres = [
+  { nombre: "Plátanos Fritos", precio: 25 },
+  { nombre: "Fresas c/Crema", precio: 35 },
+  { nombre: "Pay de Limón", precio: 30 },
+  { nombre: "Flan Casero", precio: 30 },
+  { nombre: "Mini Hot Cakes", precio: 35 },
+  { nombre: "Gomitas", precio: "15 - 25" },
+];
+
+const bebidas = [
+  { nombre: "Malteadas (Varios Sabores)", precio: 50 },
+  { nombre: "Refrescos (Variedad)", precio: 25 },
+  { nombre: "Té Helado o Caliente", precio: 20 },
+  { nombre: "Chocolate Caliente", precio: 30 },
+];
+
+const extras = [
+  { nombre: "Hot Dogs", precio: "Desde $35" },
+  { nombre: "Papas", precio: "Desde $30" },
+  { nombre: "Alitas", precio: "Orden $85" },
+  { nombre: "Costillas", precio: "Orden $120" },
+];
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Menú - Hamburguesas y Postres Castillo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-background-light font-[family-name:--font-family-display] text-main-light transition-colors duration-200"
+  >
+    <Header />
+
+    <main class="pb-24 px-4 pt-4 space-y-8 max-w-lg mx-auto">
+      <!-- Hero Image -->
+      <div class="relative w-full h-96 rounded-3xl overflow-hidden shadow-xl group"
+      >
+        <img
+          alt="Hamburguesa jugosa con queso derretido" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXaYlZg1S9xaBN89Pf7peW74OTglWusQUfDSGGz5dZe9GztiuOd_VE3SXgxvVylIxjMUpx5c4kF3HlooAUsO5zLPVKXE8R-UP7z-6DCGqzgSZ0ieiWAh3d1otgoPHyyvP9v_dw4jV3z_m0tao_nneIVUhCk_uXWgF-qwYxP8GiJJcKZtuVyKD1O125yeOeN6fF3zsq5adl5ZFWJ3cOxXl1rE1CNVMQUtGSomNKDD585OqEPyxImM-SbTlNWCpW9DDt4Q61jqLchA"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10 flex flex-col items-center justify-end pb-8 px-6 text-center"
+        >
+          <span class="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full mb-3 tracking-wider uppercase shadow-lg"
+            >Nueva Experiencia</span
+          >
+          <h2 class="text-3xl font-extrabold text-white mb-2 leading-tight">
+            Sabor Real a tu Alcance
+          </h2>
+          <p class="text-gray-200 text-sm mb-6 max-w-xs">
+            Las mejores hamburguesas y los postres más dulces en un solo lugar.
+          </p>
+          <div class="flex gap-3 w-full">
+            <button class="flex-1 bg-primary hover:bg-primary-dark text-white font-bold py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-colors shadow-lg shadow-orange-500/30"
+            >
+              <span>Ver Menú</span>
+              <span class="material-icons-round text-sm">menu_book</span>
+            </button>
+            <button class="flex-1 bg-white/20 backdrop-blur-md hover:bg-white/30 text-white border border-white/30 font-semibold py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-colors"
+            >
+              <span>Ubicación</span>
+              <span class="material-icons-round text-sm">location_on</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Info Cards -->
+      <div class="bg-card-light rounded-2xl p-5 shadow-sm grid grid-cols-2 gap-y-4 gap-x-2"
+      >
+        <div class="flex items-start gap-3">
+          <span class="material-icons-round text-primary text-2xl mt-1"
+            >schedule</span
+          >
+          <div>
+            <p class="text-[10px] font-bold text-sub-light uppercase tracking-wide"
+            >
+              Horario
+            </p>
+            <p class="font-bold text-sm text-gray-900">
+              Jue-Dom 6–11PM
+            </p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="material-icons-round text-primary text-2xl mt-1"
+            >moped</span
+          >
+          <div>
+            <p class="text-[10px] font-bold text-sub-light uppercase tracking-wide"
+            >
+              Envío
+            </p>
+            <p class="font-bold text-sm text-gray-900">
+              ¡Gratis!
+            </p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 col-span-2 pt-2 border-t border-gray-100"
+        >
+          <span class="material-icons-round text-primary text-2xl mt-1"
+            >payments</span
+          >
+          <div>
+            <p class="text-[10px] font-bold text-sub-light uppercase tracking-wide"
+            >
+              Pagos
+            </p>
+            <p class="font-bold text-sm text-gray-900">
+              Transferencias
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="flex gap-3 overflow-x-auto scrollbar-hide pb-2 -mx-4 px-4 sticky top-[72px] z-40 py-2 bg-gradient-to-b from-[--color-background] to-transparent"
+      >
+        <button class="bg-primary text-white px-5 py-2 rounded-full font-medium shadow-md shadow-orange-500/20 whitespace-nowrap flex items-center gap-2 transform hover:scale-105 transition-all"
+        >
+          <span class="material-icons-round text-sm">lunch_dining</span> Hamburguesas
+        </button>
+        <button class="bg-white text-gray-600 border border-gray-100 px-5 py-2 rounded-full font-medium whitespace-nowrap flex items-center gap-2 hover:bg-gray-50 transition-colors"
+        >
+          <span class="material-icons-round text-sm text-secondary-aqua"
+            >cake</span
+          > Postres
+        </button>
+        <button class="bg-white text-gray-600 border border-gray-100 px-5 py-2 rounded-full font-medium whitespace-nowrap flex items-center gap-2 hover:bg-gray-50 transition-colors"
+        >
+          <span class="material-icons-round text-sm text-yellow-500"
+            >emoji_food_beverage</span
+          > Crepas
+        </button>
+      </div>
+
+      <!-- Hamburguesas -->
+      <section>
+        <div class="flex items-center gap-2 mb-4">
+          <span class="material-icons-round text-primary"
+            >lunch_dining</span
+          >
+          <h3 class="text-xl font-bold text-gray-900">
+            Hamburguesas Castillo
+          </h3>
+        </div>
+        <div class="space-y-4">
+          {
+            hamburguesas.map((item) => (
+              <div class="bg-card-light p-3 rounded-2xl shadow-sm flex gap-4 items-center group relative overflow-hidden">
+                <div class="w-24 h-24 rounded-xl overflow-hidden bg-gray-100 shrink-0">
+                  {item.imagen ? (
+                    <img
+                      alt={item.nombre} class="w-full h-full object-cover"
+                      src={item.imagen}
+                    />
+                  ) : (
+                    <div class="w-full h-full bg-orange-50 flex items-center justify-center">
+                      <span class="material-icons-round text-primary text-4xl opacity-50">
+                        restaurant
+                      </span>
+                    </div>
+                  )}
+                </div>
+                <div class="flex-1 pr-8">
+                  <div class="flex justify-between items-start mb-1">
+                    <h4 class="font-bold text-gray-900 text-lg">
+                      {item.nombre}
+                    </h4>
+                    <span class="text-primary font-bold text-lg">
+                      ${item.precio}
+                    </span>
+                  </div>
+                  <p class="text-xs text-sub-light leading-relaxed">
+                    {item.descripcion}
+                  </p>
+                </div>
+                <button class="absolute bottom-0 right-0 w-12 h-12 bg-primary rounded-tl-2xl rounded-br-2xl flex items-center justify-center text-white shadow-lg shadow-orange-500/20 hover:bg-primary-dark transition-colors">
+                  <span class="material-icons-round">add</span>
+                </button>
+              </div>
+            ))
+          }
+        </div>
+      </section>
+
+      <!-- Extras Grid -->
+      <section class="grid grid-cols-2 gap-3">
+        {
+          extras.map((item) => (
+            <div class="bg-orange-50 p-4 rounded-xl flex flex-col items-center justify-center text-center gap-1 border border-orange-100 shadow-sm relative overflow-hidden group">
+              <div class="absolute inset-0 bg-primary opacity-0 group-hover:opacity-5 transition-opacity" />
+              <h4 class="font-bold text-gray-800">
+                {item.nombre}
+              </h4>
+              <p class="text-primary text-sm font-bold">
+                {item.precio}
+              </p>
+              <button class="absolute top-2 right-2 w-6 h-6 bg-white rounded-full flex items-center justify-center text-primary shadow-sm">
+                <span class="material-icons-round text-sm">add</span>
+              </button>
+            </div>
+          ))
+        }
+      </section>
+
+      <!-- Postres -->
+      <section class="bg-teal-50 -mx-4 px-4 py-8 rounded-3xl relative overflow-hidden"
+      >
+        <div class="absolute -top-10 -right-10 w-40 h-40 bg-secondary-aqua opacity-10 rounded-full blur-3xl"
+        >
+        </div>
+        <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-secondary-aqua opacity-10 rounded-full blur-3xl"
+        >
+        </div>
+        <div class="flex items-center gap-2 mb-6 relative z-10">
+          <span class="material-icons-round text-secondary-aqua text-3xl"
+            >icecream</span
+          >
+          <h3 class="text-xl font-bold text-gray-900">
+            Yummy! Postres
+          </h3>
+        </div>
+        <div class="grid grid-cols-2 gap-4 relative z-10">
+          {
+            postres.map((item) => (
+              <div class={`bg-white p-4 rounded-2xl shadow-soft border-b-4 border-secondary-aqua flex flex-col justify-between h-full relative ${item.nombre === "Gomitas" ? "col-span-2" : ""}`}
+              >
+                <div>
+                  <h4 class="font-bold text-gray-800 text-sm mb-1">
+                    {item.nombre}
+                  </h4>
+                  <p class="text-secondary-aqua font-bold text-lg">
+                    ${item.precio}
+                  </p>
+                </div>
+                <button class={`absolute bottom-3 right-3 ${item.nombre === "Gomitas" ? "w-10 h-10" : "w-8 h-8"} bg-secondary-aqua hover:bg-teal-500 rounded-full flex items-center justify-center text-white shadow-sm transition-colors`}
+                >
+                  <span class="material-icons-round text-sm">add</span>
+                </button>
+              </div>
+            ))
+          }
+        </div>
+      </section>
+
+      <!-- Bebidas -->
+      <section>
+        <div class="flex items-center gap-2 mb-4">
+          <span class="material-icons-round text-primary"
+            >local_bar</span
+          >
+          <h3 class="text-xl font-bold text-gray-900">
+            Bebidas
+          </h3>
+        </div>
+        <div class="bg-card-light rounded-2xl shadow-sm overflow-hidden divide-y divide-gray-100"
+        >
+          {
+            bebidas.map((item) => (
+              <div class="p-4 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                <span class="text-gray-700 font-medium">
+                  {item.nombre}
+                </span>
+                <div class="flex items-center gap-3">
+                  <span class="text-primary font-bold">
+                    ${item.precio}
+                  </span>
+                  <button class="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
+                    <span class="material-icons-round text-xs">add</span>
+                  </button>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="mt-8 bg-gradient-to-br from-[--color-primary] to-orange-600 rounded-3xl p-6 text-center shadow-lg relative overflow-hidden"
+      >
+        <div class="absolute top-0 right-0 -mr-8 -mt-8 w-32 h-32 bg-white opacity-10 rounded-full"
+        >
+        </div>
+        <div class="absolute bottom-0 left-0 -ml-8 -mb-8 w-32 h-32 bg-white opacity-10 rounded-full"
+        >
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-2 relative z-10">
+          ¿Ya tienes hambre?
+        </h3>
+        <p class="text-orange-50 text-sm mb-6 relative z-10">
+          Haz tu pedido ahora por WhatsApp y recíbelo en la puerta de tu casa.
+        </p>
+        <div class="flex flex-col gap-3 relative z-10">
+          <button class="bg-white text-primary font-bold py-3 px-6 rounded-xl flex items-center justify-center gap-2 hover:bg-orange-50 transition-colors shadow-lg"
+          >
+            <span class="material-icons-round">call</span>
+            55 1174 0626
+          </button>
+          <button class="bg-white text-primary font-bold py-3 px-6 rounded-xl flex items-center justify-center gap-2 hover:bg-orange-50 transition-colors shadow-lg"
+          >
+            <span class="material-icons-round">call</span>
+            55 3972 7686
+          </button>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="mt-12 mb-20 px-4 py-8 bg-gray-900 rounded-3xl text-gray-400 text-sm"
+      >
+        <div class="mb-6">
+          <h4 class="text-white font-bold text-lg mb-2">
+            Hamburguesas y Postres Castillo
+          </h4>
+          <p>
+            Ofreciendo el mejor sabor casero de la zona con ingredientes de alta
+            calidad y un toque de amor en cada platillo.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-8">
+          <div>
+            <h5 class="text-white font-bold mb-2">Horarios</h5>
+            <p>Jueves a Domingo</p>
+            <p>6:00 PM - 11:00 PM</p>
+          </div>
+          <div>
+            <h5 class="text-white font-bold mb-2">Servicios</h5>
+            <ul class="space-y-1">
+              <li>Envío a Domicilio</li>
+              <li>Transferencias</li>
+              <li>Pedidos p/Eventos</li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center mt-8 text-xs text-gray-600">
+          Castillo © 2023
+        </div>
+      </footer>
+    </main>
+
+    <BottomNav currentPage="home" />
+  </body>
 </html>
