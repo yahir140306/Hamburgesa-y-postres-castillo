@@ -1,0 +1,73 @@
+---
+interface Props {
+  currentPage?: string;
+}
+
+const { currentPage = "home" } = Astro.props;
+---
+
+<nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 pb-safe pt-2 px-6 flex justify-between items-center z-50 shadow-[0_-5px_20px_rgba(0,0,0,0.05)]"
+>
+  <a
+    class:list={[
+      "flex flex-col items-center gap-1 p-2",
+      currentPage === "home"
+        ? "text-primary"
+        : "text-gray-400 hover:text-primary",
+      "transition-colors",
+    ]}
+    href="/"
+  >
+    <span class="material-icons-round">home</span>
+    <span class="text-[10px] font-medium">Inicio</span>
+  </a>
+  <a
+    class:list={[
+      "flex flex-col items-center gap-1 p-2",
+      currentPage === "favorites"
+        ? "text-primary"
+        : "text-gray-400 hover:text-primary",
+      "transition-colors",
+    ]}
+    href="#"
+  >
+    <span class="material-icons-round">favorite_border</span>
+    <span class="text-[10px] font-medium">Favoritos</span>
+  </a>
+  <div class="relative -top-6">
+    <a href="/carrito">
+      <button class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center shadow-lg shadow-orange-500/40 border-4 border-white transform hover:scale-105 transition-transform"
+      >
+        <span class="material-icons-round">shopping_bag</span>
+        <span class="absolute top-3 right-3 w-2.5 h-2.5 bg-secondary-aqua rounded-full border border-white"
+        ></span>
+      </button>
+    </a>
+  </div>
+  <a
+    class:list={[
+      "flex flex-col items-center gap-1 p-2",
+      currentPage === "orders"
+        ? "text-primary"
+        : "text-gray-400 hover:text-primary",
+      "transition-colors",
+    ]}
+    href="#"
+  >
+    <span class="material-icons-round">receipt_long</span>
+    <span class="text-[10px] font-medium">Pedidos</span>
+  </a>
+  <a
+    class:list={[
+      "flex flex-col items-center gap-1 p-2",
+      currentPage === "profile"
+        ? "text-primary"
+        : "text-gray-400 hover:text-primary",
+      "transition-colors",
+    ]}
+    href="#"
+  >
+    <span class="material-icons-round">person_outline</span>
+    <span class="text-[10px] font-medium">Perfil</span>
+  </a>
+</nav>
