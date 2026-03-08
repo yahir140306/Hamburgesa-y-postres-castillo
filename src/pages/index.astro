@@ -61,20 +61,12 @@ import paquetesCrepas from "../data/paquetes-crepas.json";
           <p class="text-gray-200 text-sm mb-6 max-w-xs">
             Las mejores hamburguesas y los postres más dulces en un solo lugar.
           </p>
-          <div class="flex gap-3 w-full">
-            <button
-              class="flex-1 bg-primary hover:bg-primary-dark text-white font-bold py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-colors shadow-lg shadow-orange-500/30"
-            >
-              <span>Ver Menú</span>
-              <span class="material-icons-round text-sm">menu_book</span>
-            </button>
-            <button
-              class="flex-1 bg-white/20 backdrop-blur-md hover:bg-white/30 text-white border border-white/30 font-semibold py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-colors"
-            >
-              <span>Ubicación</span>
-              <span class="material-icons-round text-sm">location_on</span>
-            </button>
-          </div>
+          <button
+            class="bg-white/20 backdrop-blur-md hover:bg-white/30 text-white border border-white/30 font-semibold py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-colors w-full"
+          >
+            <span>Ubicación</span>
+            <span class="material-icons-round text-sm">location_on</span>
+          </button>
         </div>
       </div>
 
@@ -129,42 +121,47 @@ import paquetesCrepas from "../data/paquetes-crepas.json";
       <div
         class="flex gap-3 overflow-x-auto scrollbar-hide pb-2 -mx-4 px-4 sticky top-[72px] z-40 py-2 bg-gradient-to-b from-[--color-background] to-transparent"
       >
-        <button
+        <a
+          href="#hamburguesas"
           class="bg-primary text-white px-5 py-2 rounded-full font-medium shadow-md shadow-orange-500/20 whitespace-nowrap flex items-center gap-2 transform hover:scale-105 transition-all"
         >
           <span class="material-icons-round text-sm">lunch_dining</span> Hamburguesas
-        </button>
-        <button
+        </a>
+        <a
+          href="#postres"
           class="bg-white text-gray-600 border border-gray-100 px-5 py-2 rounded-full font-medium whitespace-nowrap flex items-center gap-2 hover:bg-gray-50 transition-colors"
         >
           <span class="material-icons-round text-sm text-secondary-aqua"
             >cake</span
           > Postres
-        </button>
-        <button
+        </a>
+        <a
+          href="#crepas"
           class="bg-white text-gray-600 border border-gray-100 px-5 py-2 rounded-full font-medium whitespace-nowrap flex items-center gap-2 hover:bg-gray-50 transition-colors"
         >
           <span class="material-icons-round text-sm text-purple-500"
             >breakfast_dining</span
           > Crepas & Waffles
-        </button>
-        <button
+        </a>
+        <a
+          href="#bebidas"
           class="bg-white text-gray-600 border border-gray-100 px-5 py-2 rounded-full font-medium whitespace-nowrap flex items-center gap-2 hover:bg-gray-50 transition-colors"
         >
           <span class="material-icons-round text-sm text-blue-500"
             >local_bar</span
           > Bebidas
-        </button>
-        <button
+        </a>
+        <a
+          href="#extras"
           class="bg-white text-gray-600 border border-gray-100 px-5 py-2 rounded-full font-medium whitespace-nowrap flex items-center gap-2 hover:bg-gray-50 transition-colors"
         >
           <span class="material-icons-round text-sm text-red-500">fastfood</span
           > Extras
-        </button>
+        </a>
       </div>
 
       <!-- Hamburguesas -->
-      <section>
+      <section id="hamburguesas">
         <div class="flex items-center gap-2 mb-4">
           <span class="material-icons-round text-primary">lunch_dining</span>
           <h3 class="text-xl font-bold text-gray-900">Hamburguesas Castillo</h3>
@@ -218,7 +215,7 @@ import paquetesCrepas from "../data/paquetes-crepas.json";
       </section>
 
       <!-- Extras Grid -->
-      <section class="grid grid-cols-2 gap-3">
+      <section id="extras" class="grid grid-cols-2 gap-3">
         {
           extras.map((item) => (
             <div class="bg-orange-50 p-4 rounded-xl flex flex-col items-center justify-center text-center gap-1 border border-orange-100 shadow-sm relative overflow-hidden group">
@@ -243,6 +240,7 @@ import paquetesCrepas from "../data/paquetes-crepas.json";
 
       <!-- Postres -->
       <section
+        id="postres"
         class="bg-teal-50 -mx-4 px-4 py-8 rounded-3xl relative overflow-hidden"
       >
         <div
@@ -292,6 +290,7 @@ import paquetesCrepas from "../data/paquetes-crepas.json";
 
       <!-- Crepas y Waffles -->
       <section
+        id="crepas"
         class="bg-purple-50 -mx-4 px-4 py-8 rounded-3xl relative overflow-hidden"
       >
         <div
@@ -430,7 +429,7 @@ import paquetesCrepas from "../data/paquetes-crepas.json";
       </section>
 
       <!-- Bebidas -->
-      <section>
+      <section id="bebidas">
         <div class="flex items-center gap-2 mb-4">
           <span class="material-icons-round text-primary">local_bar</span>
           <h3 class="text-xl font-bold text-gray-900">Bebidas</h3>
