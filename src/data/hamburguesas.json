@@ -1,0 +1,50 @@
+[
+  {
+    "nombre": "Sencilla",
+    "precio": 55,
+    "descripcion": "Carne, Queso Oaxaca, Queso Amarrillo, Jammón, Jitomate, Lechuga, Cebolla.",
+    "imagen": "https://lh3.googleusercontent.com/aida-public/AB6AXuA_wdyYusz-nrMt1tAxD7IPsDWLyy84w6eMi2ZtzLKIbe9VeiqvGbr9BINQu60r4JsRxYrSK5zw1LUCXAItKRyCcicHgLo1uUyyFww1uOcIupUHg_49KeMMtJGSYEeCgJ0WF68JcwC00W2-ZDhXPAYI0MQYkY_ctCCAkedwImHDf9k90zHJDQK5lC7EjZxQN3jehdQ7kVOVHieAd17Z_ZrAPPx3Gu4b0qdwFbxRXMm9CKwx5AuJDgNzCAPbi_gyqID1O86jSLMZHw"
+  },
+  {
+    "nombre": "Hawaiana",
+    "precio": 65,
+    "descripcion": "Carne, Queso Oaxaca, Queso Amarrillo, Jammón, Jitomate, Lechuga, Cebolla, Piña, Tocino.",
+    "imagen": "https://lh3.googleusercontent.com/aida-public/AB6AXuAeNS3BnbDZ9e3oO8yB1o5sZB86_1GN5SxtoJGlqPlMINSbiqHbt-EO0piQm4WTgASxqqzXxN_RZDGbImlkKoohV4SxakoZNyCaKxeCSxrZWJdakBcJfCEONBUPDO8NAjZ5LBlG1-vS_28KHTOqkVDDPuqVAe1LOQpdiL9xvmE5uZgZuMrNCFbGHQkFkiw_6Wpos1j5lW-saFPUYP9XZSipFR-lzUpRqQB-7qn2RDsFZqHJcjo3jiWiZWxVKsy7fXMneBsioz_Xag"
+  },
+  {
+    "nombre": "3 Quesos",
+    "precio": 65,
+    "descripcion": "Carne, Queso Oaxaca, Queso Amarrillo, Queso Manchego, Jammón, Jitomate, Lechuga, Cebolla.",
+    "imagen": null
+  },
+  {
+    "nombre": "Doble",
+    "precio": 110,
+    "descripcion": "Doble Carne, Doble Queso Oaxaca, Doble Queso Amarrillo, Jitomate, Lechuga, Cebolla.",
+    "imagen": "https://lh3.googleusercontent.com/aida-public/AB6AXuDAJvwVsRwpTtDQViIJY5d28f5X9jjAM3ik5PpeQ3qn9vQK6tncW8kYIs3pD1kpOh2gGPS2ip6I-W6xxUdygXurKQIq0951rh4Kw5pYQVNg_ZaMJ9baT4XkuplJFxtHEBWqJ-GWJvzJwlk7fyiRnsJlsfxUUZzLXDhUTiBkfffYr5n-zPpMhGN4SOYbzEfnZfEsukQTQV1vID5mxQLmCQ6rf150pnWmh4Xia9zPSgddMBClrwO8c_iITIOx-13aTWcyLaRTbSNgxw"
+  },
+  {
+    "nombre": "Ranchi-Mich",
+    "precio": 85,
+    "descripcion": "Bistec en Queso Oaxaca, Tocino, Jamón, Carne, Queso Amarrillo, Piña, Jitomate, Lechuga, Cebolla.",
+    "imagen": "https://lh3.googleusercontent.com/aida-public/AB6AXuDAJvwVsRwpTtDQViIJY5d28f5X9jjAM3ik5PpeQ3qn9vQK6tncW8kYIs3pD1kpOh2gGPS2ip6I-W6xxUdygXurKQIq0951rh4Kw5pYQVNg_ZaMJ9baT4XkuplJFxtHEBWqJ-GWJvzJwlk7fyiRnsJlsfxUUZzLXDhUTiBkfffYr5n-zPpMhGN4SOYbzEfnZfEsukQTQV1vID5mxQLmCQ6rf150pnWmh4Xia9zPSgddMBClrwO8c_iITIOx-13aTWcyLaRTbSNgxw"
+  },
+  {
+    "nombre": "Noe'Krunch",
+    "precio": 90,
+    "descripcion": "Pollo Empanizado, 3 Quesos (Manchego, Amarillo, Oaxaca), Tocino, Jitomate, Lechuga, Cebolla.",
+    "imagen": "https://lh3.googleusercontent.com/aida-public/AB6AXuDAJvwVsRwpTtDQViIJY5d28f5X9jjAM3ik5PpeQ3qn9vQK6tncW8kYIs3pD1kpOh2gGPS2ip6I-W6xxUdygXurKQIq0951rh4Kw5pYQVNg_ZaMJ9baT4XkuplJFxtHEBWqJ-GWJvzJwlk7fyiRnsJlsfxUUZzLXDhUTiBkfffYr5n-zPpMhGN4SOYbzEfnZfEsukQTQV1vID5mxQLmCQ6rf150pnWmh4Xia9zPSgddMBClrwO8c_iITIOx-13aTWcyLaRTbSNgxw"
+  },
+  {
+    "nombre": "Philadelphia",
+    "precio": 90,
+    "descripcion": "Queso Philadelphia, Durazno, Carne, Jamón, Queso Oaxaca, Queso Amarrillo, Jitomate, Lechuga, Cebolla",
+    "imagen": "https://lh3.googleusercontent.com/aida-public/AB6AXuDAJvwVsRwpTtDQViIJY5d28f5X9jjAM3ik5PpeQ3qn9vQK6tncW8kYIs3pD1kpOh2gGPS2ip6I-W6xxUdygXurKQIq0951rh4Kw5pYQVNg_ZaMJ9baT4XkuplJFxtHEBWqJ-GWJvzJwlk7fyiRnsJlsfxUUZzLXDhUTiBkfffYr5n-zPpMhGN4SOYbzEfnZfEsukQTQV1vID5mxQLmCQ6rf150pnWmh4Xia9zPSgddMBClrwO8c_iITIOx-13aTWcyLaRTbSNgxw"
+  },
+  {
+    "nombre": "Cubana",
+    "precio": 130,
+    "descripcion": "Carne, Salchicha, Queso Oaxaca, Pechuga Empanizada, Queso Amarrillo, Jamón, Huevo, Tocino, Jitomate, Lechuga, Cebolla.",
+    "imagen": "https://lh3.googleusercontent.com/aida-public/AB6AXuDAJvwVsRwpTtDQViIJY5d28f5X9jjAM3ik5PpeQ3qn9vQK6tncW8kYIs3pD1kpOh2gGPS2ip6I-W6xxUdygXurKQIq0951rh4Kw5pYQVNg_ZaMJ9baT4XkuplJFxtHEBWqJ-GWJvzJwlk7fyiRnsJlsfxUUZzLXDhUTiBkfffYr5n-zPpMhGN4SOYbzEfnZfEsukQTQV1vID5mxQLmCQ6rf150pnWmh4Xia9zPSgddMBClrwO8c_iITIOx-13aTWcyLaRTbSNgxw"
+  }
+]

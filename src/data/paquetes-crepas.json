@@ -1,0 +1,46 @@
+[
+  {
+    "nombre": "Paquete Básico",
+    "descripcion": "1 Base + 1 Fruta + 1 Aderezo",
+    "incluye": {
+      "bases": 1,
+      "frutas": 1,
+      "aderezos": 1,
+      "toppings": 0
+    },
+    "precio": 30
+  },
+  {
+    "nombre": "Paquete Completo",
+    "descripcion": "1 Base + 2 Frutas + 2 Aderezos",
+    "incluye": {
+      "bases": 1,
+      "frutas": 2,
+      "aderezos": 2,
+      "toppings": 0
+    },
+    "precio": 45
+  },
+  {
+    "nombre": "Paquete Deluxe",
+    "descripcion": "1 Base + 2 Frutas + 2 Aderezos + 1 Topping",
+    "incluye": {
+      "bases": 1,
+      "frutas": 2,
+      "aderezos": 2,
+      "toppings": 1
+    },
+    "precio": 55
+  },
+  {
+    "nombre": "Paquete Premium",
+    "descripcion": "1 Base + 3 Frutas + 2 Aderezos + 2 Toppings",
+    "incluye": {
+      "bases": 1,
+      "frutas": 3,
+      "aderezos": 2,
+      "toppings": 2
+    },
+    "precio": 65
+  }
+]

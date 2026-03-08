@@ -1,0 +1,30 @@
+[
+  {
+    "nombre": "Hot Dog Sencillo",
+    "precio": "$25 o 3 x $65"
+  },
+  {
+    "nombre": "Hot Dog Hawaiano",
+    "precio": "$35 o 3 x $95"
+  },
+  {
+    "nombre": "Papas a la Francesa",
+    "precio": "$55"
+  },
+  {
+    "nombre": "Alitas BBQ, Habanero o Búfalo",
+    "precio": "$65 o con papas a $95"
+  },
+  {
+    "nombre": "Costillas BBQ, Habanero o Búfulo",
+    "precio": "$120 o con papas a $150"
+  },
+  {
+    "nombre": "Palomitas de pollo",
+    "precio": "$40"
+  },
+  {
+    "nombre": "Sincronizadas",
+    "precio": "$25 o 2 x $40"
+  }
+]

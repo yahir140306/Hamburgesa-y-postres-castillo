@@ -1,0 +1,42 @@
+[
+  {
+    "nombre": "Plátanos Fritos",
+    "precio": 25
+  },
+  {
+    "nombre": "Plátanos C/Crema",
+    "precio": 25
+  },
+  {
+    "nombre": "Duraznos C/Crema",
+    "precio": 30
+  },
+  {
+    "nombre": "Fresas C/Crema",
+    "precio": 25
+  },
+  {
+    "nombre": "Pay de Limón",
+    "precio": 30
+  },
+  {
+    "nombre": "Flan",
+    "precio": 30
+  },
+  {
+    "nombre": "Mini Hot Cakes",
+    "precio": 35
+  },
+  {
+    "nombre": "Gomitas Preparadas",
+    "precio": 15
+  },
+  {
+    "nombre": "Gomitas C/Manzana Preparadas",
+    "precio": 25
+  },
+  {
+    "nombre": "Pepino Crazy",
+    "precio": 20
+  }
+]

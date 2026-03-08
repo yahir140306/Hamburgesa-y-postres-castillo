@@ -1,0 +1,26 @@
+[
+  {
+    "nombre": "Malteadas y Frappés (Chocolate, Fresa, Napolitano, Vainilla, Oreo)",
+    "precio": 50
+  },
+  {
+    "nombre": "Refrescos Preparado",
+    "precio": 45
+  },
+  {
+    "nombre": "Refrescoss / 600ML",
+    "precio": 30
+  },
+  {
+    "nombre": "Refrescoss / 2L",
+    "precio": 35
+  },
+  {
+    "nombre": "Té",
+    "precio": 15
+  },
+  {
+    "nombre": "Chocolate",
+    "precio": 30
+  }
+]

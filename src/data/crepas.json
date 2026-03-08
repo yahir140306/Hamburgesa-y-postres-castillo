@@ -1,0 +1,50 @@
+[
+  {
+    "nombre": "Isamic",
+    "ingredientes": "Rellena de Nutella, Queso Philadelphia, Fresas frescas, Platano, Kiwi, Cereza, Cubierta con Mermelada de Fresa, Chispas de Chocolate, Nuez Picada, Galleta Oreo Picada, Bolita de Helado del sabor de su preferencia.",
+    "precio": 135,
+    "tipo": "crepa"
+  },
+  {
+    "nombre": "Tropical Chocolate",
+    "ingredientes": "Rellana de Chocolcate HERSY, Queso Philadelphia, Uvas frescas, Durazno, Cubierta de Mermelada de Piña, Granillo de Chocolate, Lunetas y Suavicrema.",
+    "precio": 160,
+    "tipo": "crepa"
+  },
+  {
+    "nombre": "Otoño Dulce",
+    "ingredientes": "Rellena de Nutella, Queso Philadelphia, Manzana fresca, Piña, Cubierta con Mermelada de Mora, Pasas, Nuez Picada y Barquillo Crujiente.",
+    "precio": 140,
+    "tipo": "waffle"
+  },
+  {
+    "nombre": "Ferrero Crazy",
+    "ingredientes": "Rellena de Nutella, Queso Philadelphia, Fresas frescas, Cubierta con Mermelada de Fresa, Ferrero Rocher Picado, Chispas de Chocolate y Nuez Picada.",
+    "precio": 180,
+    "tipo": "waffle"
+  },
+  {
+    "nombre": "Kinder Delicia",
+    "ingredientes": "Rellena de Nutella, Queso Philadelphia, Plátano fresco, Cubierta con Mermelada de Fresa, Kinder Delis Picado, Chispas de Chocolate y Galleta Oreo Picada.",
+    "precio": 160,
+    "tipo": "waffle"
+  },
+  {
+    "nombre": "Amor Endulzante",
+    "ingredientes": "Rellena de Nutella, Queso Philadelphia, Fresas frescas, Plátano y kiwi, Cubierta con Mermelada de Fresa, Ferrero Rocher Picado, Kinder Delis Picado, Chispas de Chocolate y Nuez Picada.",
+    "precio": 200,
+    "tipo": "waffle"
+  },
+  {
+    "nombre": "Mic-Chocolate",
+    "ingredientes": "Rellena de Chocolate HERSY, Queso Philadelphia, Fresas frescas, Plátano y kiwi, Cubierta con Mermelada de Fresa, Granillo de Chocolate, Lunetas y Suavicrema.",
+    "precio": 180,
+    "tipo": "waffle"
+  },
+  {
+    "nombre": "Napolitano",
+    "ingredientes": "Rellena de helado Napolitano (vainilla, chocolate y fresa), Fresas, Plátano y Uva cubierta con chispas de chocolate, Nuez picada y Salsa de Chocolate.",
+    "precio": 150,
+    "tipo": "waffle"
+  }
+]

@@ -1,0 +1,94 @@
+{
+  "bases": [
+    {
+      "nombre": "Nutella",
+      "disponible": true
+    },
+    {
+      "nombre": "Philadelphia",
+      "disponible": true
+    }
+  ],
+  "frutas": [
+    {
+      "nombre": "Uva",
+      "disponible": true
+    },
+    {
+      "nombre": "Durazno",
+      "disponible": true
+    },
+    {
+      "nombre": "Platano",
+      "disponible": true
+    },
+    {
+      "nombre": "Fresa",
+      "disponible": true
+    },
+    {
+      "nombre": "Manzana",
+      "disponible": true
+    },
+    {
+      "nombre": "Kiwi",
+      "disponible": true
+    },
+    {
+      "nombre": "Piña",
+      "disponible": true
+    }
+  ],
+  "aderezos": [
+    {
+      "nombre": "Mermelada",
+      "disponible": true
+    },
+    {
+      "nombre": "Fresa",
+      "disponible": true
+    },
+    {
+      "nombre": "Piña",
+      "disponible": true
+    },
+    {
+      "nombre": "Mora",
+      "disponible": true
+    },
+    {
+      "nombre": "Chocolate",
+      "disponible": true
+    },
+    {
+      "nombre": "Hersy",
+      "disponible": true
+    }
+  ],
+  "toppings": [
+    {
+      "nombre": "Galleta Oreo",
+      "disponible": true
+    },
+    {
+      "nombre": "Chispas de Chocolate",
+      "disponible": true
+    },
+    {
+      "nombre": "Lunetas",
+      "disponible": true
+    },
+    {
+      "nombre": "Granillo de Chocolate",
+      "disponible": true
+    },
+    {
+      "nombre": "Barquillo",
+      "disponible": true
+    },
+    {
+      "nombre": "Suavicrema",
+      "disponible": true
+    }
+  ]
+}
