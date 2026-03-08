@@ -78,21 +78,26 @@ const extras = [
       rel="stylesheet"
     />
   </head>
-  <body class="bg-background-light font-[family-name:--font-family-display] text-main-light transition-colors duration-200"
+  <body
+    class="bg-background-light font-[family-name:--font-family-display] text-main-light transition-colors duration-200"
   >
     <Header />
 
     <main class="pb-24 px-4 pt-4 space-y-8 max-w-lg mx-auto">
       <!-- Hero Image -->
-      <div class="relative w-full h-96 rounded-3xl overflow-hidden shadow-xl group"
+      <div
+        class="relative w-full h-96 rounded-3xl overflow-hidden shadow-xl group"
       >
         <img
-          alt="Hamburguesa jugosa con queso derretido" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+          alt="Hamburguesa jugosa con queso derretido"
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXaYlZg1S9xaBN89Pf7peW74OTglWusQUfDSGGz5dZe9GztiuOd_VE3SXgxvVylIxjMUpx5c4kF3HlooAUsO5zLPVKXE8R-UP7z-6DCGqzgSZ0ieiWAh3d1otgoPHyyvP9v_dw4jV3z_m0tao_nneIVUhCk_uXWgF-qwYxP8GiJJcKZtuVyKD1O125yeOeN6fF3zsq5adl5ZFWJ3cOxXl1rE1CNVMQUtGSomNKDD585OqEPyxImM-SbTlNWCpW9DDt4Q61jqLchA"
         />
-        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10 flex flex-col items-center justify-end pb-8 px-6 text-center"
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10 flex flex-col items-center justify-end pb-8 px-6 text-center"
         >
-          <span class="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full mb-3 tracking-wider uppercase shadow-lg"
+          <span
+            class="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full mb-3 tracking-wider uppercase shadow-lg"
             >Nueva Experiencia</span
           >
           <h2 class="text-3xl font-extrabold text-white mb-2 leading-tight">
@@ -102,12 +107,14 @@ const extras = [
             Las mejores hamburguesas y los postres más dulces en un solo lugar.
           </p>
           <div class="flex gap-3 w-full">
-            <button class="flex-1 bg-primary hover:bg-primary-dark text-white font-bold py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-colors shadow-lg shadow-orange-500/30"
+            <button
+              class="flex-1 bg-primary hover:bg-primary-dark text-white font-bold py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-colors shadow-lg shadow-orange-500/30"
             >
               <span>Ver Menú</span>
               <span class="material-icons-round text-sm">menu_book</span>
             </button>
-            <button class="flex-1 bg-white/20 backdrop-blur-md hover:bg-white/30 text-white border border-white/30 font-semibold py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-colors"
+            <button
+              class="flex-1 bg-white/20 backdrop-blur-md hover:bg-white/30 text-white border border-white/30 font-semibold py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-colors"
             >
               <span>Ubicación</span>
               <span class="material-icons-round text-sm">location_on</span>
@@ -117,20 +124,20 @@ const extras = [
       </div>
 
       <!-- Info Cards -->
-      <div class="bg-card-light rounded-2xl p-5 shadow-sm grid grid-cols-2 gap-y-4 gap-x-2"
+      <div
+        class="bg-card-light rounded-2xl p-5 shadow-sm grid grid-cols-2 gap-y-4 gap-x-2"
       >
         <div class="flex items-start gap-3">
           <span class="material-icons-round text-primary text-2xl mt-1"
             >schedule</span
           >
           <div>
-            <p class="text-[10px] font-bold text-sub-light uppercase tracking-wide"
+            <p
+              class="text-[10px] font-bold text-sub-light uppercase tracking-wide"
             >
               Horario
             </p>
-            <p class="font-bold text-sm text-gray-900">
-              Jue-Dom 6–11PM
-            </p>
+            <p class="font-bold text-sm text-gray-900">Jue-Dom 6–11PM</p>
           </div>
         </div>
         <div class="flex items-start gap-3">
@@ -138,46 +145,49 @@ const extras = [
             >moped</span
           >
           <div>
-            <p class="text-[10px] font-bold text-sub-light uppercase tracking-wide"
+            <p
+              class="text-[10px] font-bold text-sub-light uppercase tracking-wide"
             >
               Envío
             </p>
-            <p class="font-bold text-sm text-gray-900">
-              ¡Gratis!
-            </p>
+            <p class="font-bold text-sm text-gray-900">¡Gratis!</p>
           </div>
         </div>
-        <div class="flex items-start gap-3 col-span-2 pt-2 border-t border-gray-100"
+        <div
+          class="flex items-start gap-3 col-span-2 pt-2 border-t border-gray-100"
         >
           <span class="material-icons-round text-primary text-2xl mt-1"
             >payments</span
           >
           <div>
-            <p class="text-[10px] font-bold text-sub-light uppercase tracking-wide"
+            <p
+              class="text-[10px] font-bold text-sub-light uppercase tracking-wide"
             >
               Pagos
             </p>
-            <p class="font-bold text-sm text-gray-900">
-              Transferencias
-            </p>
+            <p class="font-bold text-sm text-gray-900">Transferencias</p>
           </div>
         </div>
       </div>
 
       <!-- Category Filters -->
-      <div class="flex gap-3 overflow-x-auto scrollbar-hide pb-2 -mx-4 px-4 sticky top-[72px] z-40 py-2 bg-gradient-to-b from-[--color-background] to-transparent"
+      <div
+        class="flex gap-3 overflow-x-auto scrollbar-hide pb-2 -mx-4 px-4 sticky top-[72px] z-40 py-2 bg-gradient-to-b from-[--color-background] to-transparent"
       >
-        <button class="bg-primary text-white px-5 py-2 rounded-full font-medium shadow-md shadow-orange-500/20 whitespace-nowrap flex items-center gap-2 transform hover:scale-105 transition-all"
+        <button
+          class="bg-primary text-white px-5 py-2 rounded-full font-medium shadow-md shadow-orange-500/20 whitespace-nowrap flex items-center gap-2 transform hover:scale-105 transition-all"
         >
           <span class="material-icons-round text-sm">lunch_dining</span> Hamburguesas
         </button>
-        <button class="bg-white text-gray-600 border border-gray-100 px-5 py-2 rounded-full font-medium whitespace-nowrap flex items-center gap-2 hover:bg-gray-50 transition-colors"
+        <button
+          class="bg-white text-gray-600 border border-gray-100 px-5 py-2 rounded-full font-medium whitespace-nowrap flex items-center gap-2 hover:bg-gray-50 transition-colors"
         >
           <span class="material-icons-round text-sm text-secondary-aqua"
             >cake</span
           > Postres
         </button>
-        <button class="bg-white text-gray-600 border border-gray-100 px-5 py-2 rounded-full font-medium whitespace-nowrap flex items-center gap-2 hover:bg-gray-50 transition-colors"
+        <button
+          class="bg-white text-gray-600 border border-gray-100 px-5 py-2 rounded-full font-medium whitespace-nowrap flex items-center gap-2 hover:bg-gray-50 transition-colors"
         >
           <span class="material-icons-round text-sm text-yellow-500"
             >emoji_food_beverage</span
@@ -188,12 +198,8 @@ const extras = [
       <!-- Hamburguesas -->
       <section>
         <div class="flex items-center gap-2 mb-4">
-          <span class="material-icons-round text-primary"
-            >lunch_dining</span
-          >
-          <h3 class="text-xl font-bold text-gray-900">
-            Hamburguesas Castillo
-          </h3>
+          <span class="material-icons-round text-primary">lunch_dining</span>
+          <h3 class="text-xl font-bold text-gray-900">Hamburguesas Castillo</h3>
         </div>
         <div class="space-y-4">
           {
@@ -202,7 +208,8 @@ const extras = [
                 <div class="w-24 h-24 rounded-xl overflow-hidden bg-gray-100 shrink-0">
                   {item.imagen ? (
                     <img
-                      alt={item.nombre} class="w-full h-full object-cover"
+                      alt={item.nombre}
+                      class="w-full h-full object-cover"
                       src={item.imagen}
                     />
                   ) : (
@@ -226,7 +233,14 @@ const extras = [
                     {item.descripcion}
                   </p>
                 </div>
-                <button class="absolute bottom-0 right-0 w-12 h-12 bg-primary rounded-tl-2xl rounded-br-2xl flex items-center justify-center text-white shadow-lg shadow-orange-500/20 hover:bg-primary-dark transition-colors">
+                <button
+                  class="absolute bottom-0 right-0 w-12 h-12 bg-primary rounded-tl-2xl rounded-br-2xl flex items-center justify-center text-white shadow-lg shadow-orange-500/20 hover:bg-primary-dark transition-colors"
+                  data-add-to-cart
+                  data-nombre={item.nombre}
+                  data-precio={item.precio}
+                  data-descripcion={item.descripcion}
+                  data-imagen={item.imagen}
+                >
                   <span class="material-icons-round">add</span>
                 </button>
               </div>
@@ -241,13 +255,17 @@ const extras = [
           extras.map((item) => (
             <div class="bg-orange-50 p-4 rounded-xl flex flex-col items-center justify-center text-center gap-1 border border-orange-100 shadow-sm relative overflow-hidden group">
               <div class="absolute inset-0 bg-primary opacity-0 group-hover:opacity-5 transition-opacity" />
-              <h4 class="font-bold text-gray-800">
-                {item.nombre}
-              </h4>
-              <p class="text-primary text-sm font-bold">
-                {item.precio}
-              </p>
-              <button class="absolute top-2 right-2 w-6 h-6 bg-white rounded-full flex items-center justify-center text-primary shadow-sm">
+              <h4 class="font-bold text-gray-800">{item.nombre}</h4>
+              <p class="text-primary text-sm font-bold">{item.precio}</p>
+              <button
+                class="absolute top-2 right-2 w-6 h-6 bg-white rounded-full flex items-center justify-center text-primary shadow-sm"
+                data-add-to-cart
+                data-nombre={item.nombre}
+                data-precio={
+                  typeof item.precio === "string" ? item.precio : item.precio
+                }
+                data-descripcion={`${item.nombre} - Extras especiales`}
+              >
                 <span class="material-icons-round text-sm">add</span>
               </button>
             </div>
@@ -256,26 +274,28 @@ const extras = [
       </section>
 
       <!-- Postres -->
-      <section class="bg-teal-50 -mx-4 px-4 py-8 rounded-3xl relative overflow-hidden"
+      <section
+        class="bg-teal-50 -mx-4 px-4 py-8 rounded-3xl relative overflow-hidden"
       >
-        <div class="absolute -top-10 -right-10 w-40 h-40 bg-secondary-aqua opacity-10 rounded-full blur-3xl"
+        <div
+          class="absolute -top-10 -right-10 w-40 h-40 bg-secondary-aqua opacity-10 rounded-full blur-3xl"
         >
         </div>
-        <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-secondary-aqua opacity-10 rounded-full blur-3xl"
+        <div
+          class="absolute -bottom-10 -left-10 w-40 h-40 bg-secondary-aqua opacity-10 rounded-full blur-3xl"
         >
         </div>
         <div class="flex items-center gap-2 mb-6 relative z-10">
           <span class="material-icons-round text-secondary-aqua text-3xl"
             >icecream</span
           >
-          <h3 class="text-xl font-bold text-gray-900">
-            Yummy! Postres
-          </h3>
+          <h3 class="text-xl font-bold text-gray-900">Yummy! Postres</h3>
         </div>
         <div class="grid grid-cols-2 gap-4 relative z-10">
           {
             postres.map((item) => (
-              <div class={`bg-white p-4 rounded-2xl shadow-soft border-b-4 border-secondary-aqua flex flex-col justify-between h-full relative ${item.nombre === "Gomitas" ? "col-span-2" : ""}`}
+              <div
+                class={`bg-white p-4 rounded-2xl shadow-soft border-b-4 border-secondary-aqua flex flex-col justify-between h-full relative ${item.nombre === "Gomitas" ? "col-span-2" : ""}`}
               >
                 <div>
                   <h4 class="font-bold text-gray-800 text-sm mb-1">
@@ -285,7 +305,14 @@ const extras = [
                     ${item.precio}
                   </p>
                 </div>
-                <button class={`absolute bottom-3 right-3 ${item.nombre === "Gomitas" ? "w-10 h-10" : "w-8 h-8"} bg-secondary-aqua hover:bg-teal-500 rounded-full flex items-center justify-center text-white shadow-sm transition-colors`}
+                <button
+                  class={`absolute bottom-3 right-3 ${item.nombre === "Gomitas" ? "w-10 h-10" : "w-8 h-8"} bg-secondary-aqua hover:bg-teal-500 rounded-full flex items-center justify-center text-white shadow-sm transition-colors`}
+                  data-add-to-cart
+                  data-nombre={item.nombre}
+                  data-precio={
+                    typeof item.precio === "number" ? item.precio : item.precio
+                  }
+                  data-descripcion={`Delicioso postre: ${item.nombre}`}
                 >
                   <span class="material-icons-round text-sm">add</span>
                 </button>
@@ -298,26 +325,25 @@ const extras = [
       <!-- Bebidas -->
       <section>
         <div class="flex items-center gap-2 mb-4">
-          <span class="material-icons-round text-primary"
-            >local_bar</span
-          >
-          <h3 class="text-xl font-bold text-gray-900">
-            Bebidas
-          </h3>
+          <span class="material-icons-round text-primary">local_bar</span>
+          <h3 class="text-xl font-bold text-gray-900">Bebidas</h3>
         </div>
-        <div class="bg-card-light rounded-2xl shadow-sm overflow-hidden divide-y divide-gray-100"
+        <div
+          class="bg-card-light rounded-2xl shadow-sm overflow-hidden divide-y divide-gray-100"
         >
           {
             bebidas.map((item) => (
               <div class="p-4 flex justify-between items-center hover:bg-gray-50 transition-colors">
-                <span class="text-gray-700 font-medium">
-                  {item.nombre}
-                </span>
+                <span class="text-gray-700 font-medium">{item.nombre}</span>
                 <div class="flex items-center gap-3">
-                  <span class="text-primary font-bold">
-                    ${item.precio}
-                  </span>
-                  <button class="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
+                  <span class="text-primary font-bold">${item.precio}</span>
+                  <button
+                    class="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors"
+                    data-add-to-cart
+                    data-nombre={item.nombre}
+                    data-precio={item.precio}
+                    data-descripcion={`Bebida: ${item.nombre}`}
+                  >
                     <span class="material-icons-round text-xs">add</span>
                   </button>
                 </div>
@@ -328,12 +354,15 @@ const extras = [
       </section>
 
       <!-- Call to Action -->
-      <section class="mt-8 bg-gradient-to-br from-[--color-primary] to-orange-600 rounded-3xl p-6 text-center shadow-lg relative overflow-hidden"
+      <section
+        class="mt-8 bg-gradient-to-br from-[--color-primary] to-orange-600 rounded-3xl p-6 text-center shadow-lg relative overflow-hidden"
       >
-        <div class="absolute top-0 right-0 -mr-8 -mt-8 w-32 h-32 bg-white opacity-10 rounded-full"
+        <div
+          class="absolute top-0 right-0 -mr-8 -mt-8 w-32 h-32 bg-white opacity-10 rounded-full"
         >
         </div>
-        <div class="absolute bottom-0 left-0 -ml-8 -mb-8 w-32 h-32 bg-white opacity-10 rounded-full"
+        <div
+          class="absolute bottom-0 left-0 -ml-8 -mb-8 w-32 h-32 bg-white opacity-10 rounded-full"
         >
         </div>
         <h3 class="text-2xl font-bold text-white mb-2 relative z-10">
@@ -343,12 +372,14 @@ const extras = [
           Haz tu pedido ahora por WhatsApp y recíbelo en la puerta de tu casa.
         </p>
         <div class="flex flex-col gap-3 relative z-10">
-          <button class="bg-white text-primary font-bold py-3 px-6 rounded-xl flex items-center justify-center gap-2 hover:bg-orange-50 transition-colors shadow-lg"
+          <button
+            class="bg-white text-primary font-bold py-3 px-6 rounded-xl flex items-center justify-center gap-2 hover:bg-orange-50 transition-colors shadow-lg"
           >
             <span class="material-icons-round">call</span>
             55 1174 0626
           </button>
-          <button class="bg-white text-primary font-bold py-3 px-6 rounded-xl flex items-center justify-center gap-2 hover:bg-orange-50 transition-colors shadow-lg"
+          <button
+            class="bg-white text-primary font-bold py-3 px-6 rounded-xl flex items-center justify-center gap-2 hover:bg-orange-50 transition-colors shadow-lg"
           >
             <span class="material-icons-round">call</span>
             55 3972 7686
@@ -357,7 +388,8 @@ const extras = [
       </section>
 
       <!-- Footer -->
-      <footer class="mt-12 mb-20 px-4 py-8 bg-gray-900 rounded-3xl text-gray-400 text-sm"
+      <footer
+        class="mt-12 mb-20 px-4 py-8 bg-gray-900 rounded-3xl text-gray-400 text-sm"
       >
         <div class="mb-6">
           <h4 class="text-white font-bold text-lg mb-2">
@@ -389,6 +421,118 @@ const extras = [
       </footer>
     </main>
 
-    <BottomNav currentPage="home" />
+    <BottomNav />
+
+    <script>
+      // Cart management
+      interface CartItem {
+        nombre: string;
+        precio: number | string;
+        cantidad: number;
+        descripcion: string;
+        imagen?: string;
+      }
+
+      function getCart(): CartItem[] {
+        const cart = localStorage.getItem("cart");
+        return cart ? JSON.parse(cart) : [];
+      }
+
+      function saveCart(cart: CartItem[]) {
+        localStorage.setItem("cart", JSON.stringify(cart));
+        console.log("Cart saved:", cart); // Debug log
+        updateCartCount();
+      }
+
+      function addToCart(item: Omit<CartItem, "cantidad">) {
+        const cart = getCart();
+        const existingItem = cart.find((i) => i.nombre === item.nombre);
+
+        if (existingItem) {
+          existingItem.cantidad++;
+        } else {
+          cart.push({ ...item, cantidad: 1 });
+        }
+
+        saveCart(cart);
+        showNotification(`${item.nombre} agregado al carrito`);
+      }
+
+      function updateCartCount() {
+        const cart = getCart();
+        const count = cart.reduce((sum, item) => sum + item.cantidad, 0);
+        const badge = document.querySelector(".cart-badge") as HTMLElement;
+        if (badge && count > 0) {
+          badge.textContent = count.toString();
+          badge.style.display = "flex";
+        } else if (badge) {
+          badge.style.display = "none";
+        }
+      }
+
+      function showNotification(message: string) {
+        const notification = document.createElement("div");
+        notification.className =
+          "fixed top-20 left-1/2 -translate-x-1/2 bg-gray-900 text-white px-6 py-3 rounded-full shadow-lg z-50 flex items-center gap-2 animate-slide-down";
+        notification.innerHTML = `
+          <span class="material-icons-round text-green-400">check_circle</span>
+          <span class="font-medium">${message}</span>
+        `;
+        document.body.appendChild(notification);
+
+        setTimeout(() => {
+          notification.remove();
+        }, 2000);
+      }
+
+      // Initialize cart count on load
+      document.addEventListener("DOMContentLoaded", () => {
+        updateCartCount();
+
+        // Add event listeners to all add buttons
+        document.querySelectorAll("[data-add-to-cart]").forEach((button) => {
+          button.addEventListener("click", (e) => {
+            const btn = e.currentTarget as HTMLButtonElement;
+            const precioStr = btn.dataset.precio!;
+            // Try to parse as number, if it fails keep as string
+            const precio = isNaN(parseFloat(precioStr))
+              ? precioStr
+              : parseFloat(precioStr);
+
+            const item = {
+              nombre: btn.dataset.nombre!,
+              precio: precio,
+              descripcion: btn.dataset.descripcion!,
+              imagen: btn.dataset.imagen || undefined,
+            };
+
+            console.log("Adding to cart:", item); // Debug log
+            addToCart(item);
+
+            // Animation feedback
+            btn.style.transform = "scale(0.9)";
+            setTimeout(() => {
+              btn.style.transform = "";
+            }, 150);
+          });
+        });
+      });
+    </script>
+
+    <style>
+      @keyframes slide-down {
+        from {
+          opacity: 0;
+          transform: translate(-50%, -20px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(-50%, 0);
+        }
+      }
+      .animate-slide-down {
+        animation: slide-down 0.3s ease-out;
+      }
+    </style>
   </body>
 </html>
