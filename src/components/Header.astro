@@ -1,32 +1,16 @@
----
-interface Props {
-  showSearch?: boolean;
-}
-
-const { showSearch = true } = Astro.props;
----
-
-<div class="sticky top-0 z-50 bg-background-light/95 backdrop-blur-md border-b border-gray-100 px-4 py-3 flex items-center justify-between shadow-sm"
+<div
+  class="sticky top-0 z-50 bg-background-light/95 backdrop-blur-md border-b border-gray-100 px-4 py-3 flex items-center shadow-sm"
 >
   <div class="flex items-center gap-3">
-    <div class="bg-orange-100 p-2 rounded-xl text-primary"
-    >
+    <div class="bg-orange-100 p-2 rounded-xl text-primary">
       <span class="material-icons-round text-2xl">restaurant_menu</span>
     </div>
     <div class="flex flex-col">
       <h1 class="font-bold text-sm leading-tight text-gray-900">
         Hamburguesas y Postres
       </h1>
-      <span class="font-bold text-lg leading-tight text-gray-900"
-        >Castillo</span
+      <span class="font-bold text-lg leading-tight text-gray-900">Castillo</span
       >
     </div>
   </div>
-  {
-    showSearch && (
-      <button class="w-10 h-10 flex items-center justify-center rounded-full bg-orange-50 text-primary hover:bg-orange-100 transition-colors">
-        <span class="material-icons-round">search</span>
-      </button>
-    )
-  }
 </div>
