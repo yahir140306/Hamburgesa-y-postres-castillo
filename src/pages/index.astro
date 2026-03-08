@@ -3,59 +3,14 @@ import "../styles/global.css";
 import Header from "../components/Header.astro";
 import BottomNav from "../components/BottomNav.astro";
 
-const hamburguesas = [
-  {
-    nombre: "Sencilla",
-    precio: 55,
-    descripcion: "Carne 100% res, queso americano, vegetales frescos.",
-    imagen:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuA_wdyYusz-nrMt1tAxD7IPsDWLyy84w6eMi2ZtzLKIbe9VeiqvGbr9BINQu60r4JsRxYrSK5zw1LUCXAItKRyCcicHgLo1uUyyFww1uOcIupUHg_49KeMMtJGSYEeCgJ0WF68JcwC00W2-ZDhXPAYI0MQYkY_ctCCAkedwImHDf9k90zHJDQK5lC7EjZxQN3jehdQ7kVOVHieAd17Z_ZrAPPx3Gu4b0qdwFbxRXMm9CKwx5AuJDgNzCAPbi_gyqID1O86jSLMZHw",
-  },
-  {
-    nombre: "Hawaiana",
-    precio: 65,
-    descripcion: "Piña asada a la parrilla y jamón extra de pavo.",
-    imagen:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAeNS3BnbDZ9e3oO8yB1o5sZB86_1GN5SxtoJGlqPlMINSbiqHbt-EO0piQm4WTgASxqqzXxN_RZDGbImlkKoohV4SxakoZNyCaKxeCSxrZWJdakBcJfCEONBUPDO8NAjZ5LBlG1-vS_28KHTOqkVDDPuqVAe1LOQpdiL9xvmE5uZgZuMrNCFbGHQkFkiw_6Wpos1j5lW-saFPUYP9XZSipFR-lzUpRqQB-7qn2RDsFZqHJcjo3jiWiZWxVKsy7fXMneBsioz_Xag",
-  },
-  {
-    nombre: "3 Quesos",
-    precio: 65,
-    descripcion:
-      "Mezcla premium de quesos fundidos (Gouda, Manchego, Cheddar).",
-    imagen: null,
-  },
-  {
-    nombre: "Doble",
-    precio: 110,
-    descripcion: "Doble carne, doble sabor. Para los más hambrientos.",
-    imagen:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDAJvwVsRwpTtDQViIJY5d28f5X9jjAM3ik5PpeQ3qn9vQK6tncW8kYIs3pD1kpOh2gGPS2ip6I-W6xxUdygXurKQIq0951rh4Kw5pYQVNg_ZaMJ9baT4XkuplJFxtHEBWqJ-GWJvzJwlk7fyiRnsJlsfxUUZzLXDhUTiBkfffYr5n-zPpMhGN4SOYbzEfnZfEsukQTQV1vID5mxQLmCQ6rf150pnWmh4Xia9zPSgddMBClrwO8c_iITIOx-13aTWcyLaRTbSNgxw",
-  },
-];
-
-const postres = [
-  { nombre: "Plátanos Fritos", precio: 25 },
-  { nombre: "Fresas c/Crema", precio: 35 },
-  { nombre: "Pay de Limón", precio: 30 },
-  { nombre: "Flan Casero", precio: 30 },
-  { nombre: "Mini Hot Cakes", precio: 35 },
-  { nombre: "Gomitas", precio: "15 - 25" },
-];
-
-const bebidas = [
-  { nombre: "Malteadas (Varios Sabores)", precio: 50 },
-  { nombre: "Refrescos (Variedad)", precio: 25 },
-  { nombre: "Té Helado o Caliente", precio: 20 },
-  { nombre: "Chocolate Caliente", precio: 30 },
-];
-
-const extras = [
-  { nombre: "Hot Dogs", precio: "Desde $35" },
-  { nombre: "Papas", precio: "Desde $30" },
-  { nombre: "Alitas", precio: "Orden $85" },
-  { nombre: "Costillas", precio: "Orden $120" },
-];
+// Importar datos desde archivos JSON
+import hamburguesas from "../data/hamburguesas.json";
+import postres from "../data/postres.json";
+import bebidas from "../data/bebidas.json";
+import extras from "../data/extras.json";
+import crepas from "../data/crepas.json";
+import ingredientesCrepas from "../data/ingredientes-crepas.json";
+import paquetesCrepas from "../data/paquetes-crepas.json";
 ---
 
 <!doctype html>
@@ -189,9 +144,22 @@ const extras = [
         <button
           class="bg-white text-gray-600 border border-gray-100 px-5 py-2 rounded-full font-medium whitespace-nowrap flex items-center gap-2 hover:bg-gray-50 transition-colors"
         >
-          <span class="material-icons-round text-sm text-yellow-500"
-            >emoji_food_beverage</span
-          > Crepas
+          <span class="material-icons-round text-sm text-purple-500"
+            >breakfast_dining</span
+          > Crepas & Waffles
+        </button>
+        <button
+          class="bg-white text-gray-600 border border-gray-100 px-5 py-2 rounded-full font-medium whitespace-nowrap flex items-center gap-2 hover:bg-gray-50 transition-colors"
+        >
+          <span class="material-icons-round text-sm text-blue-500"
+            >local_bar</span
+          > Bebidas
+        </button>
+        <button
+          class="bg-white text-gray-600 border border-gray-100 px-5 py-2 rounded-full font-medium whitespace-nowrap flex items-center gap-2 hover:bg-gray-50 transition-colors"
+        >
+          <span class="material-icons-round text-sm text-red-500">fastfood</span
+          > Extras
         </button>
       </div>
 
@@ -322,6 +290,145 @@ const extras = [
         </div>
       </section>
 
+      <!-- Crepas y Waffles -->
+      <section
+        class="bg-purple-50 -mx-4 px-4 py-8 rounded-3xl relative overflow-hidden"
+      >
+        <div
+          class="absolute -top-10 -right-10 w-40 h-40 bg-purple-400 opacity-10 rounded-full blur-3xl"
+        >
+        </div>
+        <div
+          class="absolute -bottom-10 -left-10 w-40 h-40 bg-purple-400 opacity-10 rounded-full blur-3xl"
+        >
+        </div>
+        <div class="flex items-center gap-2 mb-6 relative z-10">
+          <!-- <span class="material-icons-round text-purple-600 text-3xl"
+            >breakfast_dining</span> -->
+          <h3 class="text-xl font-bold text-gray-900">Crepas & Waffles</h3>
+        </div>
+
+        <!-- Crepas y Waffles Predefinidos -->
+        <div class="grid grid-cols-1 gap-4 relative z-10 mb-6">
+          {
+            crepas.map((item) => (
+              <div class="bg-white p-4 rounded-2xl shadow-soft border-l-4 border-purple-500 relative">
+                <div class="pr-12">
+                  <div class="flex items-center justify-between mb-2">
+                    <h4 class="font-bold text-gray-900 text-base">
+                      {item.nombre}
+                    </h4>
+                    <span class="text-purple-600 font-bold text-lg">
+                      ${item.precio}
+                    </span>
+                  </div>
+                  <p class="text-xs text-gray-600 mb-2">{item.ingredientes}</p>
+                  <span class="inline-block bg-purple-100 text-purple-700 text-xs px-2 py-1 rounded-full">
+                    {item.tipo === "crepa" ? "🥞 Crepa" : "🧇 Waffle"}
+                  </span>
+                </div>
+                <button
+                  class="absolute bottom-4 right-4 w-10 h-10 bg-purple-500 hover:bg-purple-600 rounded-full flex items-center justify-center text-white shadow-sm transition-colors"
+                  data-add-to-cart
+                  data-nombre={item.nombre}
+                  data-precio={item.precio}
+                  data-descripcion={item.ingredientes}
+                >
+                  <span class="material-icons-round text-sm">add</span>
+                </button>
+              </div>
+            ))
+          }
+        </div>
+
+        <!-- Haz tu Crepa -->
+        <div class="relative z-10">
+          <div
+            class="bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl p-6 mb-4 text-white"
+          >
+            <h4 class="text-xl font-bold mb-2 flex items-center gap-2">
+              <span class="text-2xl"></span>
+              Haz tu Crepa o Waffle
+            </h4>
+            <p class="text-purple-100 text-sm">
+              Elige tu base, frutas, aderezos y toppings favoritos
+            </p>
+          </div>
+
+          <!-- Paquetes -->
+          <div class="grid grid-cols-2 gap-3 mb-6">
+            {
+              paquetesCrepas.map((paquete) => (
+                <div class="bg-white p-4 rounded-2xl border-2 border-purple-200 hover:border-purple-500 transition-colors relative">
+                  <h5 class="font-bold text-gray-900 text-sm mb-1">
+                    {paquete.nombre}
+                  </h5>
+                  <p class="text-xs text-gray-600 mb-2 leading-relaxed">
+                    {paquete.descripcion}
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <span class="text-purple-600 font-bold text-lg">
+                      ${paquete.precio}
+                    </span>
+                    <button
+                      class="w-8 h-8 bg-purple-500 hover:bg-purple-600 rounded-full flex items-center justify-center text-white shadow-sm transition-colors"
+                      data-add-to-cart
+                      data-nombre={`${paquete.nombre} - Crepa personalizada`}
+                      data-precio={paquete.precio}
+                      data-descripcion={paquete.descripcion}
+                    >
+                      <span class="material-icons-round text-xs">add</span>
+                    </button>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+
+          <!-- Ingredientes Disponibles -->
+          <div
+            class="bg-white/80 backdrop-blur-sm p-4 rounded-2xl border border-purple-200"
+          >
+            <h5
+              class="font-semibold text-gray-900 text-sm mb-3 flex items-center gap-2"
+            >
+              <span class="text-base"></span>
+              Ingredientes Disponibles
+            </h5>
+
+            <div class="space-y-3 text-xs">
+              <div>
+                <span class="font-bold text-purple-700">Bases:</span>
+                <span class="text-gray-700 ml-2">
+                  {ingredientesCrepas.bases.map((b) => b.nombre).join(" • ")}
+                </span>
+              </div>
+
+              <div>
+                <span class="font-bold text-pink-600">Frutas:</span>
+                <span class="text-gray-700 ml-2">
+                  {ingredientesCrepas.frutas.map((f) => f.nombre).join(" • ")}
+                </span>
+              </div>
+
+              <div>
+                <span class="font-bold text-amber-600">Aderezos:</span>
+                <span class="text-gray-700 ml-2">
+                  {ingredientesCrepas.aderezos.map((a) => a.nombre).join(" • ")}
+                </span>
+              </div>
+
+              <div>
+                <span class="font-bold text-blue-600">Toppings:</span>
+                <span class="text-gray-700 ml-2">
+                  {ingredientesCrepas.toppings.map((t) => t.nombre).join(" • ")}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Bebidas -->
       <section>
         <div class="flex items-center gap-2 mb-4">
@@ -415,9 +522,7 @@ const extras = [
             </ul>
           </div>
         </div>
-        <div class="text-center mt-8 text-xs text-gray-600">
-          Castillo © 2023
-        </div>
+        <div class="text-center mt-8 text-xs text-gray-600">Castillo</div>
       </footer>
     </main>
 
@@ -440,7 +545,6 @@ const extras = [
 
       function saveCart(cart: CartItem[]) {
         localStorage.setItem("cart", JSON.stringify(cart));
-        console.log("Cart saved:", cart); // Debug log
         updateCartCount();
       }
 
@@ -506,7 +610,6 @@ const extras = [
               imagen: btn.dataset.imagen || undefined,
             };
 
-            console.log("Adding to cart:", item); // Debug log
             addToCart(item);
 
             // Animation feedback
